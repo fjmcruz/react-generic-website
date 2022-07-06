@@ -1,0 +1,124 @@
+h2 {
+  text-align: center;
+}
+
+.cards {
+  background: white;
+  padding: 4rem;
+}
+
+.cards-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 92%;
+}
+
+.cards-wrapper {
+  margin: 40px 0 40px;
+  position: relative;
+}
+
+.cards-items {
+  margin-bottom: 24px;
+}
+
+.cards-item {
+  border-radius: 12px;
+  display: flex;
+  flex: 1;
+  margin: 0 1.2rem;
+}
+
+.cards-item-link {
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 124, 254, 0.018));
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(56, 124, 254, 0.18);
+  display: flex;
+  filter: drop-shadow(0 6px 20px rgba(56, 124, 254, 0.018));
+  flex-flow: column;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%;
+}
+
+.cards-item-pic-wrap {
+  overflow: hidden;
+  padding-top: 68%;
+  position: relative;
+  width: 100%;
+}
+
+.fade-img {
+  animation-duration: 2s;
+  animation-name: fade-img;
+}
+
+.cards-item-pic-wrap::after {
+  background-color: #1f98f4;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  content: attr(data-category);
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 10px;
+  max-width: calc((100%) - 60px);
+  padding: 6px 8px;
+  position: absolute;
+}
+
+.cards-item-img {
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+.cards-item-img:hover {
+  transform: scale(1.12);
+}
+
+.cards-item-info {
+  padding: 20px 30px 30px;
+}
+
+.cards-item-text {
+  color: #252e48;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content-blog-container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards-items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    padding: 2rem 0rem;
+  }
+}
